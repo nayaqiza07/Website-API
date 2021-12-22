@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="assets/css/responsi.css">
+
+    <title>Responsi</title>
+  </head>
+  <body>
+    
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">
+        <h4>M Nayaqiza A</h4>
+      </div>
+      
+      <ul>
+        <li><a href="#" id="content1">Content1</a></li>
+        <li><a href="#" id="content2">Content2</a></li>
+        <li><a href="#" id="content3">Content3</a></li>
+      </ul>
+      
+      <div class="menu-toggle">
+        <input type="checkbox">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+    
+    <div class="scroll-atas"></div>
+
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/1.jpg" class="d-block w-100" alt="1">
+          <div class="carousel-caption d-none d-md-block text-start">
+            <h5>Covid-19</h5>
+            <p>Sejenis virus yang dapat membuat seseorang sakit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/2.jpg" class="d-block w-100" alt="2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Penyebaran Covid-19 di dunia</h5>
+            <p>Covid-19 menyebar dengan sangat cepat yang berawal dari China hingga dunia.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/3.jpg" class="d-block w-100" alt="3">
+          <div class="carousel-caption d-none d-md-block text-start">
+            <h5>Stay at home</h5>
+            <p>Ingin sehat? Dirumah saja.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Akhir Carousel -->
+
+    <!-- Card Covid -->
+    <div class="container mt-5" id="section1">
+      <div class="row">
+        <h3>Kasus Covid-19 di Indonesia</h3>
+        <h6>Terakhir diupdate <span id="lastUpdate"></span></h6>
+        <div class="col-sm-3">
+          <div class="card kotak-kasus">
+            <div class="card-body">
+              <h5 class="card-title">Kasus Positif</h5>
+              <h5 class="card-text"><span id="positif"></span></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card kotak-kasus">
+            <div class="card-body">
+              <h5 class="card-title">Kasus Dirawat</h5>
+              <h5 class="card-text"><span id="dirawat"></span></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card kotak-kasus">
+            <div class="card-body">
+              <h5 class="card-title">Kasus Sembuh</h5>
+              <h5 class="card-text"><span id="sembuh"></span></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card kotak-kasus">
+            <div class="card-body">
+              <h5 class="card-title">Kasus Meninggal</h5>
+              <h5 class="card-text"><span id="meninggal"></span></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Card Covid -->
+
+    <!-- Background -->
+    <div class="background">
+      <div class="posisi">
+        <h5>Apa itu Covid-19?</h5>
+        <p>COVID-19 (coronavirus disease 2019) adalah penyakit yang disebabkan oleh jenis coronavirus baru yaitu Sars-CoV-2, yang dilaporkan pertama kali di Wuhan Tiongkok pada tanggal 31 Desember 2019. COVID-19 ini dapat menimbulkan gejala gangguan pernafasan akut seperti demam diatas 38°C, batuk dan sesak nafas bagi manusia. Selain itu dapat disertai dengan lemas, nyeri otot, dan diare. Pada penderita COVID-19 yang berat, dapat menimbulkan pneumonia, sindroma pernafasan akut, gagal ginjal bahkan sampai kematian.</p>
+        <p>COVID-19 dapat menular dari manusia ke manusia melalui kontak erat dan droplet (percikan cairan pada saat bersin dan batuk), tidak melalui udara. Bentuk COVID-19 jika dilihat melalui mikroskop elektron (cairan saluran nafas/ swab tenggorokan) dan digambarkan kembali bentuk COVID-19 seperti virus yang memiliki mahkota.</p>
+      </div>
+
+      <div class="gambargg">
+        <img src="img/2.jpg" alt="2">
+      </div>
+      
+    </div>
+    <!-- Akhir Background -->
+    
+    <!-- Berita Terkini -->
+    <div class="container" id="section2">
+      <div class="header-berita text-center">
+        <h2>Indonesia News</h2>
+        <h4>Berita Terkini</h4>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 g-4 card-berita">
+        <div class="col">
+          <div class="card h-100">
+            <img class="card-img-top" id="gambar-api1" alt="gambar1">
+            <div class="card-body">
+              <h5 class="card-title" id="judul1"></h5>
+              <p class="card-text" id="deskripsi1"></p>
+              <div class="pbawah">
+              <p class="card-text" id="author1"></p>
+              <p class="card-text" id="source1"></p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img class="card-img-top" id="gambar-api2" alt="gambar2">
+            <div class="card-body">
+              <h5 class="card-title" id="judul2"></h5>
+              <p class="card-text" id="deskripsi2"></p>
+              <p class="card-text" id="author2"></p>
+              <p class="card-text" id="source2"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img class="card-img-top" id="gambar-api3" alt="gambar3">
+            <div class="card-body">
+              <h5 class="card-title" id="judul3"></h5>
+              <p class="card-text" id="deskripsi3"></p>
+              <p class="card-text" id="author3"></p>
+              <p class="card-text" id="source3"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img class="card-img-top" id="gambar-api4" alt="gambar4">
+            <div class="card-body">
+              <h5 class="card-title" id="judul4"></h5>
+              <p class="card-text" id="deskripsi4"></p>
+              <p class="card-text" id="author4"></p>
+              <p class="card-text" id="source4"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Berita Terkini -->
+
+    <!-- Background 2 -->
+    <div class="background-2" id="section3">
+      <h2>Manfaat Vaksin Covid-19</h2>
+      <div class="par">
+        <div class="gambar-bebas">
+          <img src="img/4.jpg" alt="4">
+        </div>
+        <p>Vaksinasi adalah proses di dalam tubuh, di mana seseorang menjadi kebal atau terlindungi dari suatu penyakit, sehingga apabila suatu saat terpajan dengan penyakit tersebut, maka tidak akan sakit atau hanya mengalami sakit ringan. Vaksinasi terjadi biasanya dengan pemberian vaksin.</p>
+      </div>
+    </div>
+
+      
+    </div>
+    <!-- Akhir Background 2 -->
+
+    <!-- Kesimpulan -->
+    <div class="kesimpulan">
+      <h5>Pada responsi kali ini saya membuat konten website menggunakan html5, css, bootstrap5, javaScript, jQuery, API. Pada Konten ini saya lebih dominan menggunakan CSS daripada bootstrap5, karena saya sendiri sedang mengembangkan skill CSS saya. Pada pembuatan konten website ini saya cukup kesulitan pada layouting menggunakan Flexbox. Sekian konten dari saya, Terimakasih.</h5>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+      <table>
+        <tr>
+          <td>Dibuat Oleh</td>
+          <td>:</td>
+        </tr>
+        <tr>
+          <td>Nama</td>
+          <td>:</td>
+          <td>Muhammad Nayaqiza Aqro</td>
+        </tr>
+        <tr>
+          <td>NIM</td>
+          <td>:</td>
+          <td>19.11.2993</td>
+        </tr>
+        <tr>
+          <td>Kelas</td>
+          <td>:</td>
+          <td>Informatika 07</td>
+        </tr>
+      </table>
+    </div>
+    <div class="copyright">
+      <h6>@muhammadnayaqiza19@students.amikom.ac.id</h6>
+      <h6><a href="#" id="scroll-to-top">Scroll To Top</a></h6>
+    </div>
+    </footer>
+    
+    <!-- My JS -->
+    <script src="assets/js/responsi.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+    <script src="responsi.js"></script>
+  </body>
+</html>
